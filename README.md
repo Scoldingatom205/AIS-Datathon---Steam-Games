@@ -8,7 +8,16 @@ Teams were assigned randomly based on skillset information given to AIS through 
 My team approach was to become a hypothetical analytics and consulting firm, BARS, and offer solutions to a struggling game development company who is seeking to reverse a trend of underperforming titles. More specifically the founder of the company is a passionate gamer and is tasking us with using extensive data to identify their next successful game project according to financial success but more important, a well loved game by the gaming community.
 
 ## Dataset Structure
+Each row in the data set was a one of the 85k titles.
 
+### Preprocessing
+- Removed 14 unnecessary columns (urls, images, age, median, etc.) that would be useless for industry analysis
+- Excluded zero positive & negative reviewed games - games without any reviews does not contribute to our analysis
+- Filtered out 10k+ games with estimated ownership ranging from 0 - If games had no owners then game was an utter failure which is not very useful to analyze
+- Eliminated outliers with unusually high pricing (above $150) - A hundreth of a percent had games priced that high so it was unecessary to include them
+- Removed anomaly of a title with future release date - A future release dated game has no metric to go off of
+- Delimited estimated owners on the ‘-’ to have min and max owners - This was crucial in calculating revenue since estimated owners has a range (EX: 0 - 20000)
+- Flattened and counted every occasion for genre, language, and category - The most important transformation since genre, lanugage, and category were long lists of strings in string form so I made converted them into true lists, flattened into a single column, and counted every occasion. It was instrumental to our analysis.
 ## Insights Summary
 BARS will showcase a Tableau dashboard that leverages KPIs:
 - **Revenues**
@@ -34,29 +43,7 @@ The dashboard can be found in Tableau Public [here](https://public.tableau.com/a
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-# 👨‍💻 Methodologies
-1. Select KPIs
-2. Clean the Data
-3. Visualize
-4. Make Recommendations
 
-## Cleaning the Data
-Each row in the data set was a one of the 85k titles. You can see the detailed version of my code uploaded above but to summarize this is what I did:
-- Removed 14 unnecessary columns (urls, images, age, median, etc.) that would be useless for industry analysis
-- Excluded zero positive & negative reviewed games - games without any reviews does not contribute to our analysis
-- Filtered out 10k+ games with estimated ownership ranging from 0 - If games had no owners then game was an utter failure which is not very useful to analyze
-- Eliminated outliers with unusually high pricing (above $150) - A hundreth of a percent had games priced that high so it was unecessary to include them
-- Removed anomaly of a title with future release date - A future release dated game has no metric to go off of
-- Delimited estimated owners on the ‘-’ to have min and max owners - This was crucial in calculating revenue since estimated owners has a range (EX: 0 - 20000)
-- Flattened and counted every occasion for genre, language, and category - The most important transformation since genre, lanugage, and category were long lists of strings in string form so I made converted them into true lists, flattened into a single column, and counted every occasion. It was instrumental to our analysis.
-
-# 📦 Technologies:
-- Python on Juypter Notebook
-- pandas
-- Matplotlib
-- Numpy
-- Counter from collections
-- Tableau Dashboard
 
 
 # 🧠 What I learned
