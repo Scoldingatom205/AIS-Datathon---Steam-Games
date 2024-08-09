@@ -53,11 +53,11 @@ An interesting obvservation was found that yes the next game should be Action ge
 ![image](https://github.com/user-attachments/assets/1f9c213b-40ba-4ded-a907-30e282e59c7b)
 
 #### KPIs per Action Multiplayer game vs Action Single Player:
-- **Conccurent Users**: 795 (276% higher)
-- **Positive Reviews:**: 5,191 (268% higher)
-- **Playtime:**: 255 hours (143% higher)
-- **Owners:**: 525K (224% higher)
-- **Revenue:**: 6.8M (172% higher)
+- **Conccurent Users** 795 (276% higher)
+- **Positive Reviews:** 5,191 (268% higher)
+- **Playtime:** 255 hours (143% higher)
+- **Owners:** 525K (224% higher)
+- **Revenue:** 6.8M (172% higher)
 
 **Final recommendation: Develop an Action genre, Multiplayer game, supported in English, German, and French.**
 
