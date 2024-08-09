@@ -67,16 +67,10 @@ An interesting obvservation was found that yes the next game should be Action ge
 - **Adopt a Freemium Revenue Model:**  Implementing a 'freemium' model can drive substantial revenue, as evidenced by Fortnite’s $20 billion success. This model offers the game for free while generating income through in-game purchases. [Source: Game World Observer](https://gameworldobserver.com/2023/11/21/fortnite-revenue-20-billion-epic-games-donald-mustard).
 
 ## Final Dashboard
-The dashboard can be found in Tableau Public [here](https://public.tableau.com/app/profile/rodrigo.suarez5210/viz/SteamGamingMarketAnalysis/FinalDash) This dashboard enables users to filter by KPIs, years, and game features.
+The dashboard can be found in Tableau Public [here](https://public.tableau.com/app/profile/rodrigo.suarez5210/viz/SteamGamingMarketAnalysis/FinalDash) This dashboard enables users to filter by KPIs, years, and game features. Also look through the tooltips as they have a bunch of information on them!
+
 ![image](https://github.com/user-attachments/assets/9e48c4d1-3edc-4637-a5d7-da1d88342a02)
 
-
-
-
----------------------------------------------------------------------------------------------------------------------------------
-
-# 🧠 How I can improve this project
-- Using other data to strengthen this data set such as Twitch, streaming platform, data or gaming metrics such as users and revenue across platforms not limited to only PC. So a more in depth analysis of the gaming industry
 
 
 Thank you for taking the time to read!
