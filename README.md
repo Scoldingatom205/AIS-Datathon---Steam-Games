@@ -48,7 +48,8 @@ The gaming market is shifting. The rapid growth from 2010 to 2017 has slowed, wi
 ## Recommendations
 The genre Action led in most KPI's most importantly in Concurrent Users, Owners, Positive Reviews, Revenue. For supported languages it was consistently English, German, French, top 3 across all KPI's. For categories, Single-player and Multi-player were T1 and T2 for all the KPIs.
 
-An interesting obvservation was found that yes the next game should be Action genre and be produced in at least English, German, and French. bust should it be Single Player which led every time or another category. If we compare it to the second highest rated category, MultiPlayer we see some interesting things. Action Multiplayer games have 70% fewer games meaning that KPIs per game are higher. 
+An interesting obvservation was found that yes the next game should be Action genre and be produced in at least English, German, and French. bust should it be Single Player which led every time or another category. If we compare it to the second highest rated category, MultiPlayer we see that it has 70% fewer games meaning that KPIs per game are higher. 
+
 ![image](https://github.com/user-attachments/assets/1f9c213b-40ba-4ded-a907-30e282e59c7b)
 
 #### KPIs per Action Multiplayer game vs Action Single Player:
@@ -61,9 +62,9 @@ An interesting obvservation was found that yes the next game should be Action ge
 **Final recommendation: Develop an Action genre, Multiplayer game, supported in English, German, and French.**
 
 ## Supplementary Insights from Secondary Data
--  **Leverage Esports and Twitch Popularity:** The top games in the Esports scene and on Twitch are predominantly multiplayer action games. This popularity underscores the potential for high engagement and visibility. Sources: Statista, Backlinko, ESCharts.
-- **Expand Language Support:** Supporting multiple languages such as English, French, German, and Spanish aligns with the major demographics of Twitch users in the USA, Germany, and France. This broader language support will enhance the game's accessibility and appeal. Source: Statista.
-- **Adopt a Freemium Revenue Model:**  Implementing a 'freemium' model can drive substantial revenue, as evidenced by Fortnite’s $20 billion success. This model offers the game for free while generating income through in-game purchases. Source: Game World Observer.
+-  **Leverage Esports and Twitch Popularity:** The top games in the Esports scene and on Twitch are predominantly multiplayer action games. This popularity underscores the potential for high engagement and visibility. Sources: [Backlinko](https://backlinko.com/twitch-users#most-popular-games), [ESCharts](https://escharts.com/top-games?order=peak).
+- **Expand Language Support:** Supporting multiple languages such as English, French, German, and Spanish aligns with the major demographics of Twitch users in the USA, Germany, and France. This broader language support will enhance the game's accessibility and appeal. [Source: Statista.](https://www.statista.com/statistics/511558/twitch-traffic-by-country/)
+- **Adopt a Freemium Revenue Model:**  Implementing a 'freemium' model can drive substantial revenue, as evidenced by Fortnite’s $20 billion success. This model offers the game for free while generating income through in-game purchases. [Source: Game World Observer](https://gameworldobserver.com/2023/11/21/fortnite-revenue-20-billion-epic-games-donald-mustard).
 
 ## Final Dashboard
 The dashboard can be found in Tableau Public [here](https://public.tableau.com/app/profile/rodrigo.suarez5210/viz/SteamGamingMarketAnalysis/FinalDash) This dashboard enables users to filter by KPIs, years, and game features.
