@@ -16,31 +16,45 @@ Each row in the data set was a one of the 85k titles with 38 columns. After prep
 - Filtered out 10k+ games 0 owners
 - Eliminated outliers with high pricing (above $150) - 0.001% had games priced that high
 - Removed anomaly of a game with future release date
-- Removed data prior to 2014 due to very little amount of games
+- Removed data prior to 2010 due to very little amount of games
 - Cleaned estimated owners on the hyphen to have min and max owners to calculate revenue
-- Flattened and counted every occasion for genre, language, and category - The most important transformation since genre, lanugage, and category were long lists of strings in string form so I made converted them into true lists, flattened into a single column, and counted every occasion.
-
+- Flattened and counted every occasion for genre, language, and category - Turned long lists of strings in individual string form hashed to AppID.
+  
 ## Insights Summary
 Underperformance for our stakeholder can mean a number of things so we will use KPI's to answer a few quetions. Although we have historical data we will only be using the past 5 years to answer these questions and uncover trends using a Tableau dashboard.
 
 - **Number of Games: Is there still is a market for gaming?**
-  - Number of Games: The number of games.
+  - Since 2018 however, there is a small decline but there was a resurgence at the end of 2023. 
     
 - **Revenue: Is there still is money to be made in gaming**
-  - Revenues: Multiplied estimated owners with price to get MIN and MAX revenues.
-    
+  - Revenues = Estimated owners multiplied with price
+  - Since 2018, there is a considerable decline in revenue.
+    - However games that are free will therefore have zero revenue leaving out data to be inconclusive in answering this question due to games (priced and free) that make hundreds of millions on subscription models, microtransactions, and in-game currency.
+
+- **Positive Reviews: How do people feel gaming?**
+  - Since 2018, people seem to hate games more and more YoY with a noticeable dip in 2022. That tells us that people are unsatisfied with recent games.
+  - T5 Genres: Action, Indie, Adventure, RPG, Simulations
+  - T5 Categories: Single Player, Multiplayer, Steam Cloud, Steam Trading Cards, Full Controller Support
+  - T5 Languages: English, French, German, Simplified Chinese, Russian
+  
 - **Ownership: Are gamers still buying games?**
   - Estimated Ownership: The number of people who owns/bought the game.
-    
-- **Concurrent Users: Are alot of gamers playing at the same time?**
-  - User Concurrency: The highest number of users who are simultaneously playing.
-    
+  - Steep decline again! Due to unsatisfaction of games gathered from positive reviews, it seems gamers are not buying new games as much.
+  - T5 Genres: Action, Indie, Adventure, RPG, Casual
+  - T5 Categories: Single Player, Multiplayer, Steam Cloud, PvP, Online PvP
+  - T5 Languages: English, French, German, Simplified Chinese, Spanish-Spain
+
 - **Playtime: Are gamers investing a lot of time in gaming?**
-  - Playtime: How long on average did users play the game.
+  - Yes but there is a sharp decline.
+  - T5 Genres: Indie, Adventure, Action, Simulation, RPG
+  - T5 Categories: Single Player, Steam Cloud,, Multiplayer, Steam Trading Cards, Full Controller Support
+  - T5 Languages: English, Simplified Chinese, German, French, Spanish-Spain
+
+**To Summarize**
+Games are experiencing a decline is positive reviews, number of owerns, number of games released, and average playtime. A telling KPI is average playtime as we can analyze where users are spending their time. It seems like Indie Genre, Single-Player category, and games in English and German. In other words, due to a decline in max owners  in----------
     
-- **Positive Reviews: How do people feel gaming?**
-  - Positive Reviews: Indicates positive reception of game.
-  -  
+
+   
 ## Recommendations
 
 
@@ -53,15 +67,7 @@ The dashboard can be found in Tableau Public [here](https://public.tableau.com/a
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-
-
-# 🧠 What I learned
-- By far my most important technical learning was the last point on cleaning the data. I discovered how to use ast.literal_eval by importing ast. This is what helped me parse the long list of strings and convert them into true lists to faciliate the counting.
-- Learned how to properly clean and the value of exploring data to assertain what is necessary or relevant.
-- Implemented my preexisting knowledge of the gaming industry to conduct a rich analysis of this dataset
-
 # 🧠 How I can improve this project
-- I want to learn APIs. I think being able to connect to the Steam gaming API would have made this project much stronger
 - Using other data to strengthen this data set such as Twitch, streaming platform, data or gaming metrics such as users and revenue across platforms not limited to only PC. So a more in depth analysis of the gaming industry
 
 
