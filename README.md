@@ -8,37 +8,46 @@ Teams were assigned randomly based on skillset information given to AIS through 
 My team approach was to become a hypothetical analytics and consulting firm, BARS, and offer solutions to a struggling game development company who is seeking to reverse a trend of underperforming titles. More specifically the founder of the company is a passionate gamer and is tasking us with using extensive data to identify their next successful game project according to financial success but more important, a well loved game by the gaming community.
 
 ## Dataset Structure
-Each row in the data set was a one of the 85k titles.
+Each row in the data set was a one of the 85k titles with 38 columns. After preprocessing (see below) I finished with 63k and 21 columns. 
 
 ### Preprocessing
-- Removed 14 unnecessary columns (urls, images, age, median, etc.) that would be useless for industry analysis
-- Excluded zero positive & negative reviewed games - games without any reviews does not contribute to our analysis
-- Filtered out 10k+ games with estimated ownership ranging from 0 - If games had no owners then game was an utter failure which is not very useful to analyze
-- Eliminated outliers with unusually high pricing (above $150) - A hundreth of a percent had games priced that high so it was unecessary to include them
-- Removed anomaly of a title with future release date - A future release dated game has no metric to go off of
-- Delimited estimated owners on the ‘-’ to have min and max owners - This was crucial in calculating revenue since estimated owners has a range (EX: 0 - 20000)
-- Flattened and counted every occasion for genre, language, and category - The most important transformation since genre, lanugage, and category were long lists of strings in string form so I made converted them into true lists, flattened into a single column, and counted every occasion. It was instrumental to our analysis.
+- Removed 17 uniformative columns (urls, images, age, median, operating systems, etc.)
+- Excluded zero reviewed games
+- Filtered out 10k+ games 0 owners
+- Eliminated outliers with high pricing (above $150) - 0.001% had games priced that high
+- Removed anomaly of a game with future release date
+- Removed data prior to 2014 due to very little amount of games
+- Cleaned estimated owners on the hyphen to have min and max owners to calculate revenue
+- Flattened and counted every occasion for genre, language, and category - The most important transformation since genre, lanugage, and category were long lists of strings in string form so I made converted them into true lists, flattened into a single column, and counted every occasion.
+
 ## Insights Summary
-BARS will showcase a Tableau dashboard that leverages KPIs:
-- **Revenues**
-- **Positive Reviews**
-- **Estimated Ownership:**
-- **Playtime**
-- **Game Count**
-- **User Concurrency**
+Underperformance for our stakeholder can mean a number of things so we will use KPI's to answer a few quetions. Although we have historical data we will only be using the past 5 years to answer these questions and uncover trends using a Tableau dashboard.
 
-- - Number of Games: we want to see if there still is a market for gaming
-- Revenue: we want to see if there still is money to be made in gaming
-- Ownership: are gamers buying games?
-- Concurrent Users: is it a popular game? are alot of gamers playing at the same time?
-- Playtime: are gamers investing a lot of time gaming?
-- Positive Reviews: how do people feel about gaming?
-
+- **Number of Games: Is there still is a market for gaming?**
+  - Number of Games: The number of games.
+    
+- **Revenue: Is there still is money to be made in gaming**
+  - Revenues: Multiplied estimated owners with price to get MIN and MAX revenues.
+    
+- **Ownership: Are gamers still buying games?**
+  - Estimated Ownership: The number of people who owns/bought the game.
+    
+- **Concurrent Users: Are alot of gamers playing at the same time?**
+  - User Concurrency: The highest number of users who are simultaneously playing.
+    
+- **Playtime: Are gamers investing a lot of time in gaming?**
+  - Playtime: How long on average did users play the game.
+    
+- **Positive Reviews: How do people feel gaming?**
+  - Positive Reviews: Indicates positive reception of game.
+  -  
 ## Recommendations
 
 
 ## Final Dashboard
-The dashboard can be found in Tableau Public [here](https://public.tableau.com/app/profile/rodrigo.suarez5210/viz/SteamGamingMarketAnalysis/Dashboard1). This dashboard enables users to filter by KPIs, years, and game features.
+The dashboard can be found in Tableau Public [here](https://public.tableau.com/app/profile/rodrigo.suarez5210/viz/SteamGamingMarketAnalysis/FinalDash) This dashboard enables users to filter by KPIs, years, and game features.
+![image](https://github.com/user-attachments/assets/9e48c4d1-3edc-4637-a5d7-da1d88342a02)
+
 
 
 
